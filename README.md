@@ -40,6 +40,7 @@ To run the app locally, follow these steps:
 - Use the sorting control to sort cards by type or default order.
 - Tap the bookmark button on a card to bookmark it.
 - Navigate to the "Saved Cards" tab to view bookmarked cards.
+- The app automatically requests the next page of credit card data when the last card is displayed, ensuring a seamless browsing experience.
 
 ## Dependencies
 
