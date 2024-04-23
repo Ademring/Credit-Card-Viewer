@@ -5,11 +5,20 @@
 //  Created by Felix on 23/04/24.
 //
 
-import Foundation
+import SwiftUI
 
 class BookmarkManager: ObservableObject {
 	
-	private var bookmarks = Set<String>()
+	@AppStorage("bookmarkedCardIDs") private var bookmarkedCardIDs: String = ""
+	
+	private var bookmarks: Set<String> {
+		get {
+			return Set(bookmarkedCardIDs.components(separatedBy: ","))
+		}
+		set {
+			bookmarkedCardIDs = newValue.joined(separator: ",")
+		}
+	}
 	
 	func toggleBookmark(for card: CreditCard) {
 		if isBookmarked(card) {
