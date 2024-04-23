@@ -9,9 +9,20 @@ import SwiftUI
 
 @main
 struct CreditCardViewerApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
+	
+	var body: some Scene {
+		WindowGroup {
+			TabView {
+				CardsView()
+					.tabItem {
+						Label("All Cards", systemImage: "creditcard")
+					}
+				SavedCardsView()
+					.tabItem {
+						Label("Saved Cards", systemImage: "bookmark.fill")
+					}
+			}
+		}
+	}
+	
 }
