@@ -22,6 +22,7 @@ class CardsViewModel: ObservableObject {
 	
 	private var currentPage = 0
 	private var cancellables = Set<AnyCancellable>()
+	private let fetchSubject = PassthroughSubject<Void, Never>()
 	
 	var sortedCards: [CreditCard] {
 		switch currentSortType {
@@ -32,7 +33,20 @@ class CardsViewModel: ObservableObject {
 		}
 	}
 	
-	func fetchNextPage() {
+	init() {
+		fetchSubject
+			.throttle(for: .seconds(1), scheduler: RunLoop.main, latest: false)
+			.sink { [weak self] _ in
+				self?.fetchNextPage()
+			}
+			.store(in: &cancellables)
+	}
+	
+	func fetchNextPageThrottled() {
+		fetchSubject.send()
+	}
+	
+	private func fetchNextPage() {
 		guard !isLoading else { return }
 		isLoading = true
 		

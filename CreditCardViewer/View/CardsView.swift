@@ -35,7 +35,7 @@ struct CardsView: View {
 							.onAppear {
 								if viewModel.currentSortType == .byDefault,
 								   card == viewModel.cards.last {
-									viewModel.fetchNextPage()
+									viewModel.fetchNextPageThrottled()
 								}
 							}
 						}
@@ -47,7 +47,7 @@ struct CardsView: View {
 			}
 			.navigationTitle("Credit Cards")
 			.task {
-				viewModel.fetchNextPage()
+				viewModel.fetchNextPageThrottled()
 			}
 		}
 	}
