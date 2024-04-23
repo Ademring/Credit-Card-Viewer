@@ -12,6 +12,7 @@ Credit Card Viewer is a SwiftUI app that allows users to view a list of credit c
 - Bookmark favorite credit cards.
 - View details of each credit card.
 - Throttle network requests to prevent excessive API calls.
+- Proper error handling and display appropriate error messages if the API's fail.
 
 ## Screenshots
 
