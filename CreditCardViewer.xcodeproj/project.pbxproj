@@ -14,6 +14,7 @@
 		DC1370A12BD7A99800CF7C90 /* CreditCardViewerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1370A02BD7A99800CF7C90 /* CreditCardViewerTests.swift */; };
 		DC1370AB2BD7A99800CF7C90 /* CreditCardViewerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1370AA2BD7A99800CF7C90 /* CreditCardViewerUITests.swift */; };
 		DC1370AD2BD7A99800CF7C90 /* CreditCardViewerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1370AC2BD7A99800CF7C90 /* CreditCardViewerUITestsLaunchTests.swift */; };
+		DC1370BB2BD7ABFB00CF7C90 /* CreditCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1370BA2BD7ABFB00CF7C90 /* CreditCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		DC1370A62BD7A99800CF7C90 /* CreditCardViewerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditCardViewerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC1370AA2BD7A99800CF7C90 /* CreditCardViewerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardViewerUITests.swift; sourceTree = "<group>"; };
 		DC1370AC2BD7A99800CF7C90 /* CreditCardViewerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardViewerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DC1370BA2BD7ABFB00CF7C90 /* CreditCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		DC13708E2BD7A99500CF7C90 /* CreditCardViewer */ = {
 			isa = PBXGroup;
 			children = (
+				DC1370B92BD7A9B400CF7C90 /* Model */,
 				DC13708F2BD7A99500CF7C90 /* CreditCardViewerApp.swift */,
 				DC1370912BD7A99500CF7C90 /* ContentView.swift */,
 				DC1370932BD7A99800CF7C90 /* Assets.xcassets */,
@@ -125,6 +128,14 @@
 				DC1370AC2BD7A99800CF7C90 /* CreditCardViewerUITestsLaunchTests.swift */,
 			);
 			path = CreditCardViewerUITests;
+			sourceTree = "<group>";
+		};
+		DC1370B92BD7A9B400CF7C90 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC1370BA2BD7ABFB00CF7C90 /* CreditCard.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DC1370BB2BD7ABFB00CF7C90 /* CreditCard.swift in Sources */,
 				DC1370922BD7A99500CF7C90 /* ContentView.swift in Sources */,
 				DC1370902BD7A99500CF7C90 /* CreditCardViewerApp.swift in Sources */,
 			);
@@ -424,6 +436,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -452,6 +465,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
