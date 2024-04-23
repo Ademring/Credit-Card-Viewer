@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7DF80E692BD7DC9C003E3B28 /* GenericRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF80E652BD7DC9C003E3B28 /* GenericRepository.swift */; };
+		7DF80E6A2BD7DC9C003E3B28 /* CardServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF80E662BD7DC9C003E3B28 /* CardServiceProtocol.swift */; };
+		7DF80E6B2BD7DC9C003E3B28 /* CardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF80E672BD7DC9C003E3B28 /* CardService.swift */; };
+		7DF80E6C2BD7DC9C003E3B28 /* GenericRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF80E682BD7DC9C003E3B28 /* GenericRepositoryProtocol.swift */; };
 		DC1370902BD7A99500CF7C90 /* CreditCardViewerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC13708F2BD7A99500CF7C90 /* CreditCardViewerApp.swift */; };
 		DC1370942BD7A99800CF7C90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC1370932BD7A99800CF7C90 /* Assets.xcassets */; };
 		DC1370972BD7A99800CF7C90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC1370962BD7A99800CF7C90 /* Preview Assets.xcassets */; };
@@ -40,6 +44,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7DF80E652BD7DC9C003E3B28 /* GenericRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericRepository.swift; sourceTree = "<group>"; };
+		7DF80E662BD7DC9C003E3B28 /* CardServiceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardServiceProtocol.swift; sourceTree = "<group>"; };
+		7DF80E672BD7DC9C003E3B28 /* CardService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardService.swift; sourceTree = "<group>"; };
+		7DF80E682BD7DC9C003E3B28 /* GenericRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericRepositoryProtocol.swift; sourceTree = "<group>"; };
 		DC13708C2BD7A99500CF7C90 /* CreditCardViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditCardViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DC13708F2BD7A99500CF7C90 /* CreditCardViewerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditCardViewerApp.swift; sourceTree = "<group>"; };
 		DC1370932BD7A99800CF7C90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -83,6 +91,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7DF80E642BD7DC6F003E3B28 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				7DF80E672BD7DC9C003E3B28 /* CardService.swift */,
+				7DF80E662BD7DC9C003E3B28 /* CardServiceProtocol.swift */,
+				7DF80E652BD7DC9C003E3B28 /* GenericRepository.swift */,
+				7DF80E682BD7DC9C003E3B28 /* GenericRepositoryProtocol.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		DC1370832BD7A99500CF7C90 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +125,7 @@
 		DC13708E2BD7A99500CF7C90 /* CreditCardViewer */ = {
 			isa = PBXGroup;
 			children = (
+				7DF80E642BD7DC6F003E3B28 /* Service */,
 				DCE59E572BD7B12E00A3E655 /* ViewModel */,
 				DCE59E502BD7AF1700A3E655 /* View */,
 				DC1370B92BD7A9B400CF7C90 /* Model */,
@@ -303,6 +323,10 @@
 				DCE59E5B2BD7B2CA00A3E655 /* BookmarkManager.swift in Sources */,
 				DCE59E522BD7AF1800A3E655 /* CardsView.swift in Sources */,
 				DCE59E592BD7B14200A3E655 /* CardsViewModel.swift in Sources */,
+				7DF80E692BD7DC9C003E3B28 /* GenericRepository.swift in Sources */,
+				7DF80E6C2BD7DC9C003E3B28 /* GenericRepositoryProtocol.swift in Sources */,
+				7DF80E6B2BD7DC9C003E3B28 /* CardService.swift in Sources */,
+				7DF80E6A2BD7DC9C003E3B28 /* CardServiceProtocol.swift in Sources */,
 				DCE59E542BD7AF3000A3E655 /* CardRowView.swift in Sources */,
 				DC1370BB2BD7ABFB00CF7C90 /* CreditCard.swift in Sources */,
 				DC1370902BD7A99500CF7C90 /* CreditCardViewerApp.swift in Sources */,
