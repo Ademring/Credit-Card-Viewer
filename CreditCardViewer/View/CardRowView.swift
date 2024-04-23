@@ -10,6 +10,7 @@ import SwiftUI
 struct CardRowView: View {
 	
 	let card: CreditCard
+	@ObservedObject var bookmarkManager: BookmarkManager
 	
 	var body: some View {
 		HStack {
@@ -21,6 +22,11 @@ struct CardRowView: View {
 					.font(.subheadline)
 			}
 			Spacer()
+			Button(action: {
+				bookmarkManager.toggleBookmark(for: card)
+			}) {
+				Image(systemName: bookmarkManager.isBookmarked(card) ? "bookmark.fill" : "bookmark")
+			}
 		}
 		.buttonStyle(PlainButtonStyle())
 	}
@@ -33,7 +39,8 @@ struct CardRowView_Previews: PreviewProvider {
 			card: CreditCard(uid: "mock",
 							 creditCardType: "visa",
 							 creditCardNumber: "1234-1234-1234-1234",
-							 creditCardExpiryDate: "2026-01-01")
+							 creditCardExpiryDate: "2026-01-01"),
+			bookmarkManager: BookmarkManager()
 		)
 	}
 }

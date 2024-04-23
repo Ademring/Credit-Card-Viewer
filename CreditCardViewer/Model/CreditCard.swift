@@ -7,7 +7,11 @@
 
 import Foundation
 
-struct CreditCard: Codable {
+struct CreditCard: Codable, Identifiable, Equatable {
+	
+	var id: String {
+		uid
+	}
 	
 	let uid: String
 	let creditCardType: String

@@ -17,6 +17,8 @@
 		DCE59E522BD7AF1800A3E655 /* CardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE59E512BD7AF1800A3E655 /* CardsView.swift */; };
 		DCE59E542BD7AF3000A3E655 /* CardRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE59E532BD7AF3000A3E655 /* CardRowView.swift */; };
 		DCE59E562BD7AFC000A3E655 /* SavedCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE59E552BD7AFC000A3E655 /* SavedCardsView.swift */; };
+		DCE59E592BD7B14200A3E655 /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE59E582BD7B14200A3E655 /* CardsViewModel.swift */; };
+		DCE59E5B2BD7B2CA00A3E655 /* BookmarkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE59E5A2BD7B2CA00A3E655 /* BookmarkManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		DCE59E512BD7AF1800A3E655 /* CardsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardsView.swift; sourceTree = "<group>"; };
 		DCE59E532BD7AF3000A3E655 /* CardRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRowView.swift; sourceTree = "<group>"; };
 		DCE59E552BD7AFC000A3E655 /* SavedCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCardsView.swift; sourceTree = "<group>"; };
+		DCE59E582BD7B14200A3E655 /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
+		DCE59E5A2BD7B2CA00A3E655 /* BookmarkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,11 +104,13 @@
 		DC13708E2BD7A99500CF7C90 /* CreditCardViewer */ = {
 			isa = PBXGroup;
 			children = (
+				DCE59E572BD7B12E00A3E655 /* ViewModel */,
 				DCE59E502BD7AF1700A3E655 /* View */,
 				DC1370B92BD7A9B400CF7C90 /* Model */,
 				DC13708F2BD7A99500CF7C90 /* CreditCardViewerApp.swift */,
 				DC1370932BD7A99800CF7C90 /* Assets.xcassets */,
 				DC1370952BD7A99800CF7C90 /* Preview Content */,
+				DCE59E5A2BD7B2CA00A3E655 /* BookmarkManager.swift */,
 			);
 			path = CreditCardViewer;
 			sourceTree = "<group>";
@@ -150,6 +156,14 @@
 				DCE59E552BD7AFC000A3E655 /* SavedCardsView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DCE59E572BD7B12E00A3E655 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DCE59E582BD7B14200A3E655 /* CardsViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -283,7 +297,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCE59E562BD7AFC000A3E655 /* SavedCardsView.swift in Sources */,
+				DCE59E5B2BD7B2CA00A3E655 /* BookmarkManager.swift in Sources */,
 				DCE59E522BD7AF1800A3E655 /* CardsView.swift in Sources */,
+				DCE59E592BD7B14200A3E655 /* CardsViewModel.swift in Sources */,
 				DCE59E542BD7AF3000A3E655 /* CardRowView.swift in Sources */,
 				DC1370BB2BD7ABFB00CF7C90 /* CreditCard.swift in Sources */,
 				DC1370902BD7A99500CF7C90 /* CreditCardViewerApp.swift in Sources */,
