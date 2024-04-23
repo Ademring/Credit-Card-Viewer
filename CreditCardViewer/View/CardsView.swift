@@ -29,13 +29,15 @@ struct CardsView: View {
 				} else if !viewModel.cards.isEmpty {
 					List {
 						ForEach(viewModel.sortedCards) { card in
-							CardRowView(card: card, bookmarkManager: bookmarkManager)
-								.onAppear {
-									if viewModel.currentSortType == .byDefault,
-									   card == viewModel.cards.last {
-										viewModel.fetchNextPage()
-									}
+							NavigationLink(destination: CardDetailView(card: card)) {
+								CardRowView(card: card, bookmarkManager: bookmarkManager)
+							}
+							.onAppear {
+								if viewModel.currentSortType == .byDefault,
+								   card == viewModel.cards.last {
+									viewModel.fetchNextPage()
 								}
+							}
 						}
 					}
 				} else {

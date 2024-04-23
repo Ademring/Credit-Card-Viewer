@@ -19,6 +19,7 @@
 		DCE59E562BD7AFC000A3E655 /* SavedCardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE59E552BD7AFC000A3E655 /* SavedCardsView.swift */; };
 		DCE59E592BD7B14200A3E655 /* CardsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE59E582BD7B14200A3E655 /* CardsViewModel.swift */; };
 		DCE59E5B2BD7B2CA00A3E655 /* BookmarkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE59E5A2BD7B2CA00A3E655 /* BookmarkManager.swift */; };
+		DCE59E5D2BD7B8B600A3E655 /* CardDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE59E5C2BD7B8B600A3E655 /* CardDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		DCE59E552BD7AFC000A3E655 /* SavedCardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedCardsView.swift; sourceTree = "<group>"; };
 		DCE59E582BD7B14200A3E655 /* CardsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewModel.swift; sourceTree = "<group>"; };
 		DCE59E5A2BD7B2CA00A3E655 /* BookmarkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkManager.swift; sourceTree = "<group>"; };
+		DCE59E5C2BD7B8B600A3E655 /* CardDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 				DCE59E512BD7AF1800A3E655 /* CardsView.swift */,
 				DCE59E532BD7AF3000A3E655 /* CardRowView.swift */,
 				DCE59E552BD7AFC000A3E655 /* SavedCardsView.swift */,
+				DCE59E5C2BD7B8B600A3E655 /* CardDetailView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				DCE59E542BD7AF3000A3E655 /* CardRowView.swift in Sources */,
 				DC1370BB2BD7ABFB00CF7C90 /* CreditCard.swift in Sources */,
 				DC1370902BD7A99500CF7C90 /* CreditCardViewerApp.swift in Sources */,
+				DCE59E5D2BD7B8B600A3E655 /* CardDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

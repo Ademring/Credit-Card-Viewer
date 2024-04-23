@@ -20,7 +20,9 @@ struct SavedCardsView: View {
 		NavigationView {
 			List {
 				ForEach(savedCards) { card in
-					CardRowView(card: card, bookmarkManager: bookmarkManager)
+					NavigationLink(destination: CardDetailView(card: card)) {
+						CardRowView(card: card, bookmarkManager: bookmarkManager)
+					}
 				}
 			}
 			.navigationTitle("Saved Cards")
